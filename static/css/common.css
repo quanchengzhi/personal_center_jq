@@ -1,0 +1,357 @@
+
+.clearfix::after{
+    display: block;
+    content: " ";
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+/* personal style */
+.wrapper{
+    width: 7.5rem;
+    margin: 0 auto;
+}
+.wrapper .head{
+    height: 2rem;
+    line-height: 2rem;
+    width: 100%;
+}
+.wrapper .head img{
+    width:1.2rem;
+    height:1.2rem;
+    border-radius:50%;
+    margin-left: 0.64rem;
+    margin-bottom: 0.2rem;
+    background: #000;
+}
+.wrapper .head span{
+    font-size:0.48rem;
+    font-family:PingFang SC;
+    font-weight:bold;
+    color:rgba(8,16,26,1);
+    margin-left: 0.39rem;
+}
+.wrapper .coupons{
+    width:100%;
+    height:4.24rem;
+    background:rgba(255,255,255,1);
+    border-radius:0.08rem;
+    margin-top: 0.2rem;
+}
+.wrapper .coupons h2{
+    margin-top: 0.32rem;
+    margin-left: 0.65rem;
+    font-size:0.32rem;
+    font-family:PingFang SC;
+    font-weight:bold;
+    color:rgba(8,16,26,1);
+}
+.wrapper .coupons li{
+    width: 100%;
+    margin-top: 0.62rem;
+}
+.wrapper .coupons li:nth-of-type(1){
+    margin-top:0.96rem;
+}
+.wrapper .coupons li span{
+    display: inline-block;
+    font-size:0.28rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(8,16,26,1);
+}
+.wrapper .coupons li span:nth-of-type(1){
+    width: 3rem;
+    margin-left: 0.64rem;
+}
+.wrapper .coupons li span:nth-of-type(2){
+    width: 0.6rem;
+    margin-left: 2.5rem;
+    text-align: right;
+}
+.wrapper .coupons li img{
+    margin-left: 0.12rem;
+    width: 0.1rem;
+    height: 0.196rem;
+    margin-bottom: 0.08rem;
+}
+
+.wrapper .service{
+    width: 100%;
+    height: 5.02rem;
+    margin-top: 0.21rem;
+}
+
+.wrapper .service h2{
+    font-size:0.32rem;
+    font-family:PingFang SC;
+    font-weight:bold;
+    color:rgba(8,16,26,1);
+    margin-left: 0.65rem;
+    margin-top: 0.32rem;
+}
+.wrapper .service img{
+    width: 1.04rem;
+    height: 1.04rem;
+    margin-top: 0.72rem;
+    margin-left: 0.65rem;
+}
+.wrapper .service span{
+    display: inline-block;
+    margin-left: 0.3rem;
+    width: 1.4rem;
+    margin-top: 0.11rem;
+    text-align: center;
+    font-size:0.28rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(8,16,26,1);
+
+}
+.wrapper .service span:nth-of-type(1){
+    margin-left: 0.45rem;
+}
+.wrapper .service .second{
+    margin-top: 0.4rem;
+}
+.wrapper .service span:nth-of-type(5){
+    margin-left: 0.45rem;
+}
+.wrapper .kefu{
+    width: 100%;
+    height: 0.94rem;
+    line-height: 0.94rem;
+    margin-top: 0.2rem;
+    font-size:0.32rem;
+    font-family:PingFang SC;
+    font-weight:bold;
+}
+.wrapper .kefu span{
+    color:rgba(8,16,26,1);
+    margin-left: 0.65rem;
+}
+.wrapper .kefu a{
+    margin-left: 2.3rem;
+    color: #9FA6AEFF;
+}
+.wrapper .kefu img{
+    margin-left: 0.11rem;
+    width: 0.1rem;
+    height: 0.196rem;
+    margin-bottom: 0.05rem;
+}
+
+
+/* myCoupons style */
+
+.coWrapper{
+    width: 7.5rem;
+    margin: 0 auto;
+}
+.coWrapper .head{
+    width: 100%;
+    height: 0.91rem;
+    position: relative;
+}
+
+.coWrapper .head .choose{
+    line-height: 0.91rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:0.3rem;
+    font-family:PingFang SC;
+    font-weight:bold;
+}
+.coWrapper .head .choose span{
+    position: relative;
+    display: inline-block;
+    width: 1rem;
+    height: 0.91rem;
+    text-align: center;
+}
+.coWrapper .head .choose .checked{
+    color: #2782F4FF;
+}
+.coWrapper .head .choose .checked::after{
+    content: ' ';
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.04rem;
+    background: #2782F4FF;
+    position: absolute;
+    bottom: 0.1rem;
+    left: 0.25rem;
+}
+
+
+
+.coWrapper .mescroll {
+    width: 100%;
+	height: 12rem;
+}
+.coWrapper .allCoupons{
+    overflow-x: hidden;
+}
+.coWrapper .allCoupons .coupons{
+    background: url('../img/my_service_ticket@2x.png');
+    background-repeat: no-repeat;
+    background-size: auto 2.16rem;
+    width: 100%;
+    height: 2.16rem;
+    margin-left: 0.32rem;
+    margin-top: 0.2rem;
+    position: relative;
+} 
+.coWrapper .allCoupons .coupons div{
+    float: right;
+    width: 0.8rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    padding-right: 0.55rem;
+}
+.coWrapper .allCoupons .coupons div p{
+    transform: rotate(-35deg);
+    font-size:0.2rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(198,205,213,1);
+}
+.gray{
+    filter: grayscale(100%);
+}
+.thisHide{
+    display: none;
+}
+.thisShow{
+    display: block;
+}
+
+.coWrapper .allCoupons .coupons span{
+    display: inline-block;
+    height: 2.16rem;
+    vertical-align: top;
+}
+.coWrapper .allCoupons .coupons span:nth-of-type(1){
+    width: 2.25rem;
+    font-size:0.96rem;
+    font-family:PingFang SC;
+    margin-left: 0.4rem;
+    color:rgba(255,255,255,1);
+}
+.coWrapper .allCoupons .coupons span:nth-of-type(1) i{
+    font-size: 0.48rem;
+    line-height: 2.16rem;
+}
+.coWrapper .allCoupons .coupons span:nth-of-type(2){
+    font-size:0.24rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(69,73,72,1);
+}
+.coWrapper .allCoupons .coupons span:nth-of-type(2) p{
+    margin-top: 0.11rem;
+}
+.coWrapper .allCoupons .coupons span:nth-of-type(2) p:nth-of-type(1){
+    margin-bottom: 0.12rem;
+    margin-top: 0.32rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+
+
+/* details style */
+.deWrapper{
+    width: 7.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.deWrapper .content{
+    width: 6.86rem;
+    height: 6.86rem;
+    margin-top: 0.4rem;
+    margin-left: 0.33rem;
+}
+.deWrapper .content .type{
+    font-size:0.36rem;
+    font-family:PingFang SC;
+    font-weight:800;
+    color:rgba(8,16,26,1);
+    margin-left: 0.24rem;
+    margin-top: 0.4rem;
+}
+.deWrapper .content .type span{
+    margin-left: 0.28rem;
+    color: #FF8E1AFF;
+}
+.deWrapper .content .limit{
+    font-size:0.28rem;
+    font-family:PingFang SC;
+    color:rgba(8,16,26,1);
+    margin-left: 0.24rem;
+    margin-top: 0.27rem;
+}
+.deWrapper .content .time{
+    font-size:0.28rem;
+    font-family:PingFang SC;
+    color:#9FA6AEFF;
+    margin-left: 0.24rem;
+    margin-top: 0.2rem;
+}
+.deWrapper .content .code{
+    width: 2.26rem;
+    height: 2.26rem;
+    margin-top: 0.81rem;
+    margin-left: 2.3rem;
+    background: url('../img/qr_cwz_download_cheduo.png');
+    background-size: 100%;
+}
+.deWrapper .content .redemption{
+    font-size:0.32rem;
+    font-family:PingFang SC;
+    font-weight:800;
+    color:rgba(8,16,26,1);
+    margin-top: 0.41rem;
+    margin-left: 1.55rem;
+}
+.deWrapper .content .website{
+    margin-top: 0.71rem;
+    margin-left: 0.38rem;
+    font-size:0.3rem;
+    font-family:PingFang SC;
+    color:rgba(8,16,26,1);
+}
+.deWrapper .content .website span:nth-of-type(2){
+    margin-left: 1.8rem;
+    color: #9FA6AEFF;
+    font-size: 0.24rem;
+}
+.deWrapper .content .website img{
+    margin-left: 0.08rem;
+}
+.description{
+    margin-left: 0.33rem;
+}
+.description h2{
+    margin-top: 0.23rem;
+    font-size:0.28rem;
+    font-family:PingFang SC;
+    font-weight:bold;
+    color:rgba(8,16,26,1);
+}
+.description p{
+    font-size:0.28rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(159,166,174,1);
+    margin-bottom: 0.19rem;
+}
+.description p:nth-of-type(1){
+    margin-top: 0.3rem;
+}
+.description p:nth-last-of-type(1) a{
+    color: #2782F4FF;
+}
